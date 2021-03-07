@@ -1,0 +1,301 @@
+employee_id	assigned_sex	location	tenure	satisfaction
+AQ1600314	male	Seattle	0.9	4
+AQ1808649	male	Seattle	4.3	4
+AQ1850081	male	New York	1.2	4
+AQ1929192	male	Seattle	1.5	4
+AQ1238345	male	New York	4.8	4
+AQ1704874	male	Seattle	3.3	3
+AQ1497648	male	Seattle	0.7	5
+AQ1528648	male	Seattle	1.4	5
+AQ1822058	male	Seattle	1.3	1
+AQ1733525	male	New York	2.4	5
+AQ1831951	male	Seattle	0.5	3
+AQ1360724	male	New York	1.5	3
+AQ1286782	male	New York	0.9	4
+AQ1298324	male	New York	2.7	4
+AQ1562748	male	New York	4.3	5
+AQ1215018	male	Seattle	1.3	4
+AQ1064055	male	New York	2.1	4
+AQ1485193	male	New York	1.5	6
+AQ1595780	male	New York	2	3
+AQ1483835	male	Seattle	4.1	7
+AQ1900103	male	New York	1.6	4
+AQ1207713	male	New York	1	4
+AQ1949757	male	New York	3.6	4
+AQ1464106	male	Seattle	1.7	4
+AQ1684866	male	New York	2.7	2
+AQ1146193	male	Seattle	4.8	5
+AQ1894673	male	Seattle	0.7	5
+AQ1190169	male	Seattle	0.6	4
+AQ1274527	male	New York	2.5	4
+AQ1566108	male	New York	1	4
+AQ1684829	male	Seattle	2.9	6
+AQ1443241	male	Seattle	3	4
+AQ1997780	male	Seattle	0.3	4
+AQ1682578	male	Seattle	2.2	4
+AQ1280864	male	New York	0.3	5
+AQ1050152	male	New York	4.1	4
+AQ1244819	male	New York	1.7	6
+AQ1638215	male	Seattle	2.1	4
+AQ1967135	male	Seattle	3	6
+AQ1392770	male	New York	1.1	3
+AQ1604636	male	Seattle	2.5	4
+AQ1644679	male	Seattle	4	4
+AQ1532053	male	New York	3.4	4
+AQ1372767	male	New York	4	4
+AQ1255250	male	New York	0.4	4
+AQ1348391	male	Seattle	4.8	6
+AQ1047580	male	New York	0.7	4
+AQ1782650	male	Seattle	0.9	5
+AQ1729487	male	Seattle	1.3	2
+AQ1924263	male	Seattle	0.3	2
+AQ1059627	male	New York	3.3	5
+AQ1687196	male	Seattle	2.5	6
+AQ1015166	male	New York	2.7	4
+AQ1846165	male	New York	3.1	3
+AQ1433067	male	Seattle	3.6	7
+AQ1957312	male	New York	1.3	4
+AQ1504377	male	Seattle	1.2	5
+AQ1245589	male	Seattle	5	5
+AQ1169263	male	New York	1.5	3
+AQ1239862	male	Seattle	2	4
+AQ1745805	male	New York	0.9	3
+AQ1091220	male	Seattle	2.1	3
+AQ1753727	male	Seattle	0.8	5
+AQ1212198	male	Seattle	0.6	2
+AQ1494491	male	Seattle	1	2
+AQ1449621	male	Seattle	3.1	4
+AQ1774935	male	Seattle	4.8	4
+AQ1256118	male	Seattle	2.7	3
+AQ1655420	male	Seattle	2.4	6
+AQ1109714	male	Seattle	1.4	5
+AQ1891122	male	Seattle	1.1	5
+AQ1050309	male	New York	2.8	6
+AQ1007946	male	Seattle	3.3	4
+AQ1697105	male	New York	1.1	5
+AQ1098208	male	New York	2.1	6
+AQ1566944	male	New York	4.8	6
+AQ1941166	male	Seattle	1.1	3
+AQ1982061	male	New York	1.9	6
+AQ1268300	male	New York	1.2	3
+AQ1289945	male	New York	1.8	4
+AQ1314376	male	Seattle	3.6	4
+AQ1295772	male	Seattle	2.2	5
+AQ1706613	male	Seattle	3.2	3
+AQ1501356	male	Seattle	3.5	4
+AQ1917631	male	Seattle	2.5	4
+AQ1882533	male	Seattle	0.6	3
+AQ1220140	male	Seattle	1.9	6
+AQ1734450	male	New York	2.4	2
+AQ1894244	male	New York	1	3
+AQ1243150	male	Seattle	3.9	4
+AQ1123166	male	Seattle	1.1	5
+AQ1888236	male	Seattle	3	5
+AQ1275819	male	New York	4.6	4
+AQ1033047	male	New York	2	5
+AQ1819695	male	New York	1.1	4
+AQ1899371	male	Seattle	2.8	5
+AQ1096362	male	Seattle	4.2	4
+AQ1320351	male	New York	0.7	4
+AQ1647749	male	Seattle	0.5	3
+AQ1833864	male	Seattle	1.3	5
+AQ1434172	male	Seattle	0.7	4
+AQ1831466	male	Seattle	1.5	4
+AQ1242534	male	New York	1.5	5
+AQ1620954	male	Seattle	2.2	4
+AQ1527203	male	New York	5.7	6
+AQ1804995	male	Seattle	0.5	6
+AQ1263790	male	Seattle	4.7	5
+AQ1888078	male	New York	1.3	5
+AQ1142440	male	Seattle	2.1	5
+AQ1566203	male	Seattle	0.8	3
+AQ1605157	male	Seattle	2.4	5
+AQ1981366	male	Seattle	4.8	5
+AQ1454269	male	Seattle	1.6	3
+AQ1209982	male	New York	1.8	4
+AQ1918586	male	New York	0.5	5
+AQ1763368	male	New York	3.5	5
+AQ1514325	male	New York	2.4	2
+AQ1089377	male	New York	1.5	4
+AQ1087113	male	New York	1.8	5
+AQ1675515	male	Seattle	1.1	4
+AQ1167331	male	New York	1.7	5
+AQ1544158	male	Seattle	1.5	2
+AQ1771876	male	Seattle	0.2	3
+AQ1529179	male	New York	1.8	3
+AQ1329774	male	Seattle	0.8	4
+AQ1759037	male	New York	0.5	4
+AQ1660712	male	Seattle	3.1	3
+AQ1861917	male	Seattle	1.7	3
+AQ1407148	male	New York	3.8	6
+AQ1412379	male	Seattle	6.4	4
+AQ1205306	male	New York	1.8	5
+AQ1711520	male	New York	1.3	3
+AQ1919121	male	Seattle	2.8	4
+AQ1512619	male	New York	0.9	3
+AQ1856865	male	New York	1.9	3
+AQ1082891	male	Seattle	2.3	4
+AQ1242375	male	New York	0.5	4
+AQ1728475	male	Seattle	2.5	4
+AQ1772627	male	New York	3.3	3
+AQ1478604	male	New York	0.8	5
+AQ1056753	male	Seattle	0.6	5
+AQ1600344	male	New York	0.3	3
+AQ1467028	male	New York	2.4	5
+AQ1164191	male	New York	1.5	4
+AQ1490433	male	New York	1.2	5
+AQ1310836	male	New York	2	6
+AQ1216959	male	New York	0.4	3
+AQ1681706	male	New York	1	4
+AQ1521387	male	Seattle	5.3	5
+AQ1449594	male	Seattle	2.3	3
+AQ1154022	male	New York	1.8	5
+AQ1808578	male	New York	1.6	5
+AQ1498564	male	New York	2.8	4
+AQ1752775	male	New York	0.3	4
+AQ1946008	male	Seattle	1.9	4
+AQ1901485	male	Seattle	3.9	5
+AQ1466827	male	New York	2.3	3
+AQ1633402	male	New York	0.7	2
+AQ1885503	male	Seattle	4.7	4
+AQ1541596	male	New York	0.7	4
+AQ1860182	male	New York	1.8	4
+AQ1554608	male	Seattle	2	3
+AQ1494216	male	New York	1.4	4
+AQ1830466	male	New York	1.8	7
+AQ1538163	male	New York	2.5	4
+AQ1215427	male	Seattle	5.1	6
+AQ1328953	male	Seattle	4.1	6
+AQ1130917	male	New York	1.2	4
+AQ1846981	male	New York	1	3
+AQ1954309	male	Seattle	5	5
+AQ1637181	male	New York	2.4	4
+AQ1459766	male	Seattle	0.9	3
+AQ1275885	male	New York	1.7	5
+AQ1952887	male	Seattle	0.3	4
+AQ1433185	male	Seattle	0.9	4
+AQ1396478	male	New York	2.3	5
+AQ1943834	male	Seattle	0.3	4
+AQ1877092	male	New York	0.4	4
+AQ1772848	male	New York	3.1	4
+AQ1302339	male	Seattle	1.6	5
+AQ1196552	male	Seattle	1.3	5
+AQ1392877	male	Seattle	1.4	5
+AQ1591015	neither	Seattle	2.7	2
+AQ1129918	neither	New York	2.1	3
+AQ1532542	neither	Seattle	2	4
+AQ1166730	neither	Seattle	0.1	4
+AQ1064459	neither	New York	1.2	3
+AQ1201815	neither	New York	3.3	4
+AQ1428852	neither	New York	3.7	4
+AQ1480422	neither	Seattle	3.3	3
+AQ1759278	neither	Seattle	2.6	3
+AQ1563368	neither	Seattle	0.8	3
+AQ1903238	female	Seattle	1.5	4
+AQ1974163	female	New York	1.2	5
+AQ1537373	female	New York	5.7	6
+AQ1699457	female	New York	1.4	2
+AQ1853950	female	New York	6.4	6
+AQ1683057	female	New York	0.4	4
+AQ1506226	female	New York	3	5
+AQ1689326	female	New York	2.4	3
+AQ1475242	female	New York	0.7	2
+AQ1660368	female	Seattle	1.8	5
+AQ1784823	female	Seattle	0.2	3
+AQ1109449	female	New York	1.9	4
+AQ1767037	female	New York	0.9	5
+AQ1679823	female	New York	0.7	4
+AQ1196585	female	Seattle	0.8	4
+AQ1555572	female	New York	1.4	4
+AQ1100281	female	Seattle	0.5	5
+AQ1096733	female	Seattle	1.7	5
+AQ1271413	female	New York	0.1	3
+AQ1468301	female	New York	1.2	4
+AQ1021224	female	New York	1.7	4
+AQ1115856	female	New York	1.8	5
+AQ1619308	female	New York	5.1	2
+AQ1903515	female	New York	2.3	4
+AQ1515074	female	Seattle	1.1	2
+AQ1284482	female	New York	1.7	2
+AQ1768430	female	New York	3.1	2
+AQ1736975	female	Seattle	1.2	5
+AQ1363121	female	Seattle	2.3	5
+AQ1264766	female	Seattle	0.9	3
+AQ1431926	female	Seattle	2	4
+AQ1486741	female	Seattle	0.4	3
+AQ1928414	female	New York	4.1	4
+AQ1225183	female	New York	1	3
+AQ1014973	female	New York	3.1	3
+AQ1548902	female	New York	4.8	3
+AQ1785507	female	Seattle	1.1	3
+AQ1093475	female	Seattle	2.9	4
+AQ1320880	female	Seattle	2.2	4
+AQ1708940	female	Seattle	0.9	4
+AQ1930907	female	New York	1.7	4
+AQ1448991	female	Seattle	1.3	5
+AQ1413199	female	Seattle	4	5
+AQ1247792	female	New York	2.4	3
+AQ1276437	female	New York	1.8	3
+AQ1444117	female	Seattle	1.3	3
+AQ1215277	female	Seattle	2.3	3
+AQ1923513	female	Seattle	2.3	5
+AQ1730052	female	Seattle	0.7	4
+AQ1046496	female	Seattle	5.5	3
+AQ1475530	female	New York	0.9	2
+AQ1960289	female	New York	0.6	4
+AQ1472537	female	New York	3.9	4
+AQ1184582	female	New York	3.4	4
+AQ1844201	female	New York	0.6	3
+AQ1306250	female	Seattle	0.8	3
+AQ1534956	female	Seattle	0.5	2
+AQ1912469	female	New York	1.3	3
+AQ1886396	female	New York	0.3	4
+AQ1170465	female	Seattle	1.3	3
+AQ1220054	female	New York	2.2	3
+AQ1371138	female	Seattle	1	2
+AQ1562142	female	New York	4.4	3
+AQ1996721	female	New York	1.3	4
+AQ1357093	female	New York	0.2	3
+AQ1055084	female	New York	2.5	3
+AQ1616306	female	New York	1.2	4
+AQ1854566	female	Seattle	3.2	4
+AQ1041741	female	Seattle	1.9	3
+AQ1228773	female	New York	2.2	3
+AQ1890689	female	New York	1.3	2
+AQ1035586	female	Seattle	4.5	5
+AQ1211980	female	New York	0.5	2
+AQ1051940	female	Seattle	2.3	4
+AQ1928565	female	Seattle	2.2	4
+AQ1209475	female	Seattle	0.7	3
+AQ1168575	female	New York	0.2	3
+AQ1110334	female	Seattle	2	3
+AQ1817186	female	Seattle	0.9	3
+AQ1631905	female	New York	4.2	4
+AQ1770511	female	Seattle	2.4	3
+AQ1493674	female	New York	3.3	3
+AQ1149997	female	Seattle	1.4	2
+AQ1339094	female	New York	1	3
+AQ1362599	female	New York	1.4	4
+AQ1504343	female	Seattle	1.5	3
+AQ1312745	female	New York	0.9	3
+AQ1436877	female	New York	0.8	3
+AQ1150754	female	New York	3.2	4
+AQ1480481	female	Seattle	5	5
+AQ1759322	female	Seattle	0.7	4
+AQ1581021	female	New York	2.2	4
+AQ1848267	female	Seattle	2.5	4
+AQ1159867	female	New York	3.7	4
+AQ1473679	female	Seattle	1.5	3
+AQ1842707	female	New York	1.9	3
+AQ1488155	female	Seattle	3.7	5
+AQ1448441	female	Seattle	1.6	6
+AQ1950407	female	Seattle	1.4	6
+AQ1883034	female	Seattle	0.2	4
+AQ1940951	female	Seattle	0.5	3
+AQ1601800	female	New York	1.5	2
+AQ1973341	female	New York	1.3	3
+AQ1186924	female	Seattle	2.4	4
+AQ1935626	female	New York	2	5
+AQ1744488	female	Seattle	4	4
+AQ1233041	female	Seattle	1.3	2
+AQ1145253	female	Seattle	5.4	5
