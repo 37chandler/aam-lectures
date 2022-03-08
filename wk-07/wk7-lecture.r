@@ -5,7 +5,6 @@ library(alr4) # for heights data
 d.bank <- read_tsv(paste(here(),"data","bank_survey_data.txt",sep="/"))
 
 
-
 arm::display(lm(progressivism ~ 1,
                 data=d.bank))
 
