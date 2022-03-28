@@ -101,8 +101,8 @@ aqi.fit <- aqi.model %>%
 predict(aqi.fit,d.test)
 
 d.test <- d.test %>% 
-  bind_cols(predict(aqi.fit,d.test)) %>% 
-  rename(pred_lm = .pred)
+  mutate(pred_lm = predict(aqi.fit,d.test) %>% 
+           pull(.pred)) 
 
 ggplot(d.test,
        aes(x=air_quality_index,y=pred_lm)) + 
@@ -128,6 +128,7 @@ aqi.fit.tree <- aqi.model.tree %>%
         pressure + wind_speed + sky_condition,
       data=d.train)
 
+# an alternative way to add the column. 
 d.test <- d.test %>% 
   bind_cols(predict(aqi.fit.tree,d.test)) %>% 
   rename(pred_tree = .pred)
