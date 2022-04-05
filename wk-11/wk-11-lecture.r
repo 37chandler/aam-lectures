@@ -23,11 +23,7 @@ library(lubridate)
 #   ggplot(aes(x=row,y=missing_frac)) + 
 #   geom_line()
 
-
-
-
-
-d <- read_tsv(paste(here(),"data","subaru_data.txt",sep="/"))
+d <- read_tsv(paste(here("data","subaru_data.txt")))
 
 d <- d %>% 
   mutate(age = if_else(year < 2020, 2019 - year, NA_real_))
@@ -35,7 +31,6 @@ d <- d %>%
 skimr::skim(d)
 
 introduce(d)
-
 
 p <- plot_missing(d)
 ggsave(p,file=paste("wk-11","missing_rows.png",sep="/"),dpi=320)
@@ -76,7 +71,7 @@ d %>%
 
 subaru.recipe <- d %>%  
   recipe() %>% 
-  step_normalize(age) %>%  
+  step_range(age) %>%  
   prep()
 
 d %>% 

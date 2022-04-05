@@ -106,7 +106,7 @@ d.test <- d.test %>%
 
 ggplot(d.test,
        aes(x=air_quality_index,y=pred_lm)) + 
-  geom_point() + 
+  geom_point(alpha=0.05) + 
   geom_abline(slope=1,intercept=0) + 
   theme_minimal()
 
@@ -156,4 +156,5 @@ d.test <- d.test %>%
   rename(pred_rf = .pred)
 
 metrics(d.test,truth=air_quality_index,estimate=pred_rf)
+
 
