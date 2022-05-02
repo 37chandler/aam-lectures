@@ -51,15 +51,29 @@ ggplot(d,
   theme_minimal() + 
   labs(fill="Enviro Focal Value")
 
-d %>% 
+for.plot <- d %>% 
   filter(gender %in% c("male","female")) %>% 
-  count(main_focal_value,gender) %>% 
-  mutate(main_focal_value = fct_reorder(main_focal_value,n,sum)) %>% 
-  ggplot(aes(x=n,y=main_focal_value,color=gender)) + 
+  count(main_focal_value,gender) 
+
+for.plot <- for.plot %>% 
+  left_join(d %>% 
+              count(gender) %>% 
+              rename(total=n),
+            by="gender")
+
+for.plot <- for.plot %>% 
+  mutate(fraction = n/total)
+
+
+for.plot %>% 
+  mutate(main_focal_value = fct_reorder(main_focal_value,fraction,sum)) %>% 
+  ggplot(aes(x=fraction,y=main_focal_value,color=gender)) + 
   geom_point() + 
   theme_minimal() + 
-  labs(x="Number of Respondents",y="",
-       title="Main Focal Values")
+  labs(x="Fraction of Gender Choosing Value",y="",
+       title="Main Focal Values",
+       color="Gender") + 
+  scale_x_continuous(label=percent)
 
 ggplot(d,
        aes(x=account_age,group=enviro_focal_val,fill=enviro_focal_val)) + 
