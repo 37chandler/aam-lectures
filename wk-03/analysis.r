@@ -78,7 +78,7 @@ weather_d %>%
 
 # Phil has an 60% success rate, Chuck's is 82 allegedly. There are typically
 # between 22 and 36 days between equinox and easter
-set.seed(20230205)
+set.seed(20230208)
 
 phil <- phil %>% 
   mutate(correct = rbinom(nrow(phil),size=1,p=0.6)) 
@@ -95,5 +95,46 @@ d <- phil %>%
 
 d %>% 
   group_by(groundhog) %>% 
-  summarize(m = mean(correct))
+  summarize(frac_correct = mean(correct),
+            num_correct = sum(correct),
+            num_years = n())
+
+accuracy_diff <- function(x) {
+  phil_accuracy <- mean(x$correct[x$groundhog=="phil"])
+  chuck_accuracy <- mean(x$correct[x$groundhog=="chuck"])
+  
+  return(chuck_accuracy - phil_accuracy)
+}
+
+accuracy_diff(d)
+
+# Null hypothesis: groundhog name is independent of correctness
+
+num_sim <- 1000
+
+results <- tibble(
+  statistic = c(accuracy_diff(d),
+                rep(NA,num_sim))
+)
+
+new_d <- d
+
+for(i in 2:nrow(results)){
+  
+  new_d$correct <- sample(new_d$correct)
+  
+  results$statistic[i] <- accuracy_diff(new_d)
+}
+
+ggplot(results,
+       aes(x=statistic)) +
+  geom_density() + 
+  geom_vline(xintercept=accuracy_diff(d))
+
+mean(abs(results$statistic) >= abs(accuracy_diff(d)))
+
+
+
+
+
 
