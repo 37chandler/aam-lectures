@@ -8,3 +8,4 @@ lm_1 <- lm(accidents_per_10K_1 ~ weekday + weather +
 
 summary(lm_1)
 anova(lm_1)
+
