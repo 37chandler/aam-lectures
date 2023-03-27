@@ -40,7 +40,7 @@ d %>%
   ggplot(aes(x=time_of_day,y=aqi,group=pressure,color=pressure)) + 
   geom_line() + 
   labs(x="Time",y="AQI",color="Pressure") + 
-  theme_minimal()
+  theme_minimal() 
 
 # Nothing obvious here. Will assume it's not good and then test adding it
 
@@ -57,8 +57,8 @@ lm.1.tod <- lm(air_quality_index ~ altitude + moisture +
                  time_of_day,
                data=d)
 
-anova(lm.1,test="Chisq")
-anova(lm.1,lm.1.tod,test="Chisq")
+anova(lm.1) 
+anova(lm.1,lm.1.tod)
 
 arm::display(lm.1)
 arm::coefplot(lm.1)
