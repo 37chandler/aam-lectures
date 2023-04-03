@@ -30,7 +30,7 @@ d <- d %>%
 
 skimr::skim(d)
 
-introduce(d)
+introduce(d) %>% data.frame()
 
 p <- plot_missing(d)
 ggsave(p,file=paste("wk-11","missing_rows.png",sep="/"),dpi=320)
