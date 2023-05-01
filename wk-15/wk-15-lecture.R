@@ -62,7 +62,7 @@ d %>%
   labs(x="Price",y="",color="Num Cylinders") + 
   scale_x_continuous(label=dollar)
 
-# Going to drop cylinders because of issues with imputation
+# Going to drop cylinders because of issues with imputation (and time management)
 
 d <- d %>% 
   filter(!is.na(model)) %>% 
@@ -117,7 +117,7 @@ final_svm <- finalize_workflow(wf,best_fit)
 fitted.svm <- fit(final_svm,data=training(splits))
 
 
-knn.mod <- nearest_neighbor() %>% 
+knn.mod <- nearest_neighbor(neighbors=11) %>% 
   set_engine("kknn")
 
 xgb.mod <- boost_tree() %>% 
@@ -164,7 +164,9 @@ d.test <- d.test %>%
 
 d.test %>% 
   filter(between(error,-5000,-3000)) %>% 
-  arrange(error)
+  arrange(error) %>% 
+  data.frame()
+
 
 d.test %>% 
   filter(between(error,3000,5000)) %>% 
