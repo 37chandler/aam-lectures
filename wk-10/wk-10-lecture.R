@@ -1,8 +1,9 @@
 library(tidyverse)
 library(tidymodels)
 library(here)
+library(rpart.plot)
 
-d <- read_csv(paste(here(),"data","Fowler_air_quality_data_2.csv",sep="/"))
+d <- read_csv(here("data","Fowler_air_quality_data_2.csv"))
 
 ## fix a data issue
 d <- d %>% 
@@ -117,8 +118,6 @@ metrics(d.test,truth=air_quality_index,estimate=pred_lm)
 #               Add on rpart approach                                     #
 ###########################################################################
 
-library(rpart.plot)
-
 aqi.model.tree <- decision_tree() %>%  
   set_engine("rpart") %>% 
   set_mode("regression")
@@ -135,7 +134,7 @@ d.test <- d.test %>%
 
 metrics(d.test,truth=air_quality_index,estimate=pred_tree)
 
-rpart.plot(aqi.fit.tree$fit)
+rpart.plot(aqi.fit.tree$fit,roundint=F)
 
 
 ###########################################################################
