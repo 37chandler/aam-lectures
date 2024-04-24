@@ -1,3 +1,7 @@
+library(tidyverse)
+library(tidymodels)
+library(here)
+
 
 # Let's look at a quick example of overfitting
 
@@ -30,9 +34,7 @@ summary(lm(Y ~ X138,d=d2))
 
 
 ### Analysis of Subaru Data
-library(tidyverse)
-library(tidymodels)
-library(here)
+start <- Sys.time()
 
 cores <- parallel::detectCores()
 
@@ -87,7 +89,8 @@ svm.mod <- svm_rbf(
   cost = tune(),
   rbf_sigma = tune()
 ) %>% 
-  set_engine("kernlab",num.threads=cores) %>% 
+  set_engine("kernlab",
+             num.threads=cores) %>% 
   set_mode("regression")
 
 svm_grid <- grid_regular(
@@ -116,12 +119,13 @@ final_svm <- finalize_workflow(wf,best_fit)
 
 fitted.svm <- fit(final_svm,data=training(splits))
 
-
 knn.mod <- nearest_neighbor(neighbors=11) %>% 
-  set_engine("kknn")
+  set_engine("kknn") %>% 
+  set_mode("regression")
 
 xgb.mod <- boost_tree() %>% 
-  set_engine("xgboost")
+  set_engine("xgboost") %>% 
+  set_mode("regression")
 
 
 fitted.knn <- wf %>% 
@@ -173,6 +177,7 @@ d.test %>%
   arrange(error)
 
 
+Sys.time() - start
 
 
 
